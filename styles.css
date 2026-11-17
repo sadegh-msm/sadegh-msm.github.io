@@ -12,3 +12,29 @@
 @media(max-width:980px){.shell{width:min(100% - 48px,850px)}.hero-grid{grid-template-columns:1fr;gap:55px}.hero-aside{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.aside-label,.aside-bottom{grid-column:1/-1}.metric{display:block;border-top:1px solid #3e5e62}.metric>span{display:block;margin-top:9px}.section-heading,.job,.skill-row{grid-template-columns:170px 1fr;gap:25px}.project-grid{grid-template-columns:1fr 1fr}.about-grid{gap:40px}}
 @media(max-width:680px){.shell{width:calc(100% - 36px)}.site-header{position:static}.header-inner{min-height:66px}.site-header nav{display:none}.header-cta{padding:9px 12px}.hero-grid{padding-top:50px;padding-bottom:70px}.hero-kicker{margin-top:54px}.hero h1{font-size:clamp(49px,11vw,72px)}.hero-copy{font-size:16px}.hero-aside{grid-template-columns:1fr 1fr}.metric{padding:10px 0}.metric strong{font-size:34px}.section{padding:70px 0}.section-heading,.job,.skill-row,.about-grid,.contact-inner{grid-template-columns:1fr;gap:14px}.section-heading{margin-bottom:35px}.job{padding:29px 0}.job-meta{flex-direction:row;justify-content:space-between}.job h3{font-size:26px}.job-intro{font-size:15px;margin:18px 0 14px}.detail-list{font-size:13px}.project-grid{grid-template-columns:1fr}.project-card{padding:23px}.skill-row{padding:16px 0}.about-grid{gap:35px}.contact{padding:70px 0}.contact-inner{gap:25px}}
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}.button{transition:none}}
+
+/* A concise introduction puts the work history within the first viewport. */
+.header-inner{min-height:64px}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(36px,6vw,96px);align-items:end;padding-top:57px;padding-bottom:61px}
+.hero-kicker{display:flex;align-items:center;gap:11px;margin:0 0 20px;color:#c8dfd6;font-size:12px}
+.hero h1{font-size:clamp(55px,6vw,82px);line-height:1}
+.hero-aside{border:0;padding:0;align-self:end}
+.hero-role{margin:0 0 13px;color:var(--lime);font-size:13px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+.hero-copy{font-size:17px;line-height:1.6;margin:0 0 25px;max-width:550px}
+.hero-actions{gap:10px}.hero-actions .button{padding:12px 15px;gap:22px}
+.hero-rule{height:3px;background:var(--lime)}
+.experience{padding-top:70px}.experience .section-heading{margin-bottom:32px}
+@media(max-width:980px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px}.hero-aside{display:block}.hero h1{font-size:clamp(54px,7vw,72px)}}
+@media(max-width:680px){.header-inner{min-height:62px}.hero-grid{grid-template-columns:1fr;gap:25px;padding-top:39px;padding-bottom:46px}.hero-kicker{margin:0 0 15px}.hero h1{font-size:clamp(49px,11vw,66px)}.hero-role{margin-bottom:8px}.hero-copy{font-size:15px;line-height:1.55;margin-bottom:18px}.hero-actions .button{padding:11px 13px;gap:15px}.experience{padding-top:52px}.experience .section-heading{margin-bottom:22px}}
+
+/* Final compact composition: the first role is visible above the fold. */
+.hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;padding-top:40px;padding-bottom:43px}
+.hero h1{font-size:clamp(52px,5.1vw,72px);line-height:1.04;white-space:nowrap}
+.hero-kicker{margin:17px 0 0;color:#c8dfd6}
+.hero-role{margin-bottom:9px}.hero-copy{font-size:16px;margin-bottom:18px}
+.experience{padding-top:44px}.experience .section-heading{margin-bottom:21px;align-items:center}
+.experience .section-heading h2{font-size:clamp(35px,3.3vw,48px);margin-bottom:4px}
+.experience .section-heading p{font-size:14px}
+.experience .job:first-child{padding-top:26px}
+@media(max-width:980px){.hero h1{white-space:normal}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:clamp(48px,5.5vw,64px)}}
+@media(max-width:680px){.hero-grid{grid-template-columns:1fr;gap:19px;padding-top:35px;padding-bottom:38px}.hero h1{font-size:clamp(47px,11vw,64px)}.hero-kicker{margin-top:13px}.hero-copy{font-size:15px;margin-bottom:15px}.experience{padding-top:38px}.experience .section-heading{margin-bottom:18px}.experience .section-heading h2{font-size:35px}.experience .job:first-child{padding-top:21px}}
